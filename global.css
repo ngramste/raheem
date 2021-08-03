@@ -1,0 +1,105 @@
+body, h1, h2, h3, h4, h5 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+.w3-half img {
+  margin-bottom: -6px;
+  margin-top: 16px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.w3-half img:hover {
+  opacity:1;
+}
+
+.hr-theme {
+  width:50px;
+  border:5px solid #673ab7;
+}
+
+.mySlides {
+  display:none;
+}
+
+.reference-link {
+  text-decoration: none;
+}
+
+.contact-info {
+  padding: 0px 0px 4px 0px;
+  margin: 0px 0px 4px 0px;
+}
+
+#aboutMeImage {
+  padding:16px;
+  width:100%;
+}
+
+@media only screen and (min-width: 600px) {
+  #aboutMeImage {
+    max-width: 650px;
+    padding:16px;
+    width:50%;
+  }
+}
+
+#mainHeader {
+  font-size: 42px;
+}
+
+@media only screen and (min-width: 440px) {
+  #mainHeader {
+    font-size: 64px;
+  }
+}
+
+#references-grid {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  /* grid-auto-rows: 1fr; */
+  grid-gap: 16px;
+  padding: 16px;
+}
+
+.reference-tile {
+  display: grid;
+  grid-template-columns: 100px auto;
+}
+
+.reference-tile img {
+  padding: 8px;
+  width: 100%;
+}
+
+.reference-tile-info {
+  grid-column: 1 / span 2;
+}
+
+@media only screen and (min-width: 701px) {
+  #references-grid {
+    grid-template-columns: 49% 49%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #references-grid {
+    grid-template-columns: 100%;
+  }
+}
+
+#contactDetails {
+  display: grid;
+  grid-template-columns: 90px auto;
+  word-break: normal;
+}
+
+@media only screen and (max-width: 420px) {
+  #contactDetails {
+    grid-template-columns: auto;
+  }
+}
